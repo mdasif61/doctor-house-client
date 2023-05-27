@@ -1,0 +1,9 @@
+.scrolled {
+    background-color: rgba(0, 0, 0, 0.705);
+    transition: background-color 200ms linear;
+    backdrop-filter: blur(10px);
+  }
+.nav-color {
+    background-color: transparent;
+    transition: background-color 200ms linear;
+  }

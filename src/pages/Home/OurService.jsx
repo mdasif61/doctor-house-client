@@ -1,67 +1,82 @@
 import React, { useState } from "react";
 import Container from "../../Layout/Container";
 import "../../css/OurService.css";
-import doctor from "../../../public/images/doctor1.jpg";
+import useServices from "../../hooks/useServices";
+import doctor from '../../../public/images//doctor.jpg'
+import Categorys from "./Categorys";
 
 const OurService = () => {
-  const [tab, setTab] = useState("Preventive");
+  const [tab, setTab] = useState("Preventive Dentistry");
+  const [services] = useServices();
+
+  const serviceCategory = services.filter(service => service.
+    category_name === tab)
 
   return (
     <Container>
-      <div className="service p-5 my-16">
-        <div className="row-span-2 flex items-center justify-center">
+      <div className="flex p-5 my-16">
+        <div className="flex w-1/2 items-center justify-center">
           <img
-            className="rounded-l-full w-full border-white border-8 shadow-xl"
+            className="w-full border-white border-8 shadow-xl"
             src={doctor}
             alt="doctor"
           />
         </div>
-        <div className="px-10 flex flex-col justify-center">
-          <h1 className="text-2xl mb-3 font-bold">Our Service</h1>
-          <p className="leading-8 text-gray-500">
-            Our clinic offers a comprehensive range of medical treatments
-            designed to address a wide spectrum of health conditions and promote
-            overall well-being. Our experienced medical professionals are
-            skilled in providing advanced and evidence-based therapies to
-            deliver effective results.
-          </p>
-        </div>
-        <div className="px-10 flex justify-between cursor-pointer">
-          <div>
-            <h1
-              onClick={() => setTab("Preventive")}
-              className={`${
-                tab === "Preventive"
-                  ? "bg-[#7E679B] rounded-full py-3 px-6 text-white font-bold"
-                  : "py-3 px-6 border-[#7E679B] border-2 rounded-full"
-              }`}
-            >
-              Preventive Dentistry
-            </h1>
+        <div className="w-1/2 flex flex-col items-center justify-center">
+          <div className="px-10 flex flex-col justify-center">
+            <h1 className="text-2xl mb-3 font-bold">Our Service</h1>
+            <p className="leading-8 text-gray-500">
+              Our clinic offers a comprehensive range of medical treatments
+              designed to address a wide spectrum of health conditions and promote
+              overall well-being. Our experienced medical professionals are
+              skilled in providing advanced and evidence-based therapies to
+              deliver effective results.
+            </p>
           </div>
-          <div>
-            <h1
-              onClick={() => setTab("Restorative")}
-              className={`${
-                tab === "Restorative"
-                  ? "bg-[#7E679B] rounded-full py-3 px-6 text-white font-bold"
-                  : "py-3 px-6 border-[#7E679B] border-2 rounded-full"
-              }`}
-            >
-              Restorative Dentistry
-            </h1>
-          </div>
-          <div>
-            <h1
-              onClick={() => setTab("Cosmetic")}
-              className={`${
-                tab === "Cosmetic"
-                  ? "bg-[#7E679B] rounded-full py-3 px-6 text-white font-bold"
-                  : "py-3 px-6 border-[#7E679B] border-2 rounded-full"
-              }`}
-            >
-              Cosmetic Dentistry
-            </h1>
+          <div className="flex flex-col p-10">
+            <div className="flex justify-between cursor-pointer">
+              <div>
+                <h1
+                  onClick={() => setTab("Preventive Dentistry")}
+                  className={`${tab === "Preventive Dentistry"
+                    ? "bg-[#7E679B] rounded-full px-4 py-2 text-white font-bold"
+                    : "px-4 py-2 border-[#7E679B] border-2 rounded-full"
+                    }`}
+                >
+                  Preventive Dentistry
+                </h1>
+              </div>
+              <div>
+                <h1
+                  onClick={() => setTab("Restorative Dentistry")}
+                  className={`${tab === "Restorative Dentistry"
+                    ? "bg-[#7E679B] rounded-full px-4 py-2 text-white font-bold"
+                    : "px-4 py-2 border-[#7E679B] border-2 rounded-full"
+                    }`}
+                >
+                  Restorative Dentistry
+                </h1>
+              </div>
+              <div>
+                <h1
+                  onClick={() => setTab("Cosmetic Dentistry")}
+                  className={`${tab === "Cosmetic Dentistry"
+                    ? "bg-[#7E679B] rounded-full px-4 py-2 text-white font-bold"
+                    : "px-4 py-2 border-[#7E679B] border-2 rounded-full"
+                    }`}
+                >
+                  Cosmetic Dentistry
+                </h1>
+              </div>
+            </div>
+            <div className="text-black flex justify-between gap-5 my-5 border p-5 rounded-lg border-blue-600">
+              {
+                serviceCategory.map(category =><Categorys
+                key={category._id}
+                category={category}
+                ></Categorys>)
+              }
+            </div>
           </div>
         </div>
       </div>
