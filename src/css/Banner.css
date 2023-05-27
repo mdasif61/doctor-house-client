@@ -1,0 +1,156 @@
+.bgImg {
+  background-image: linear-gradient(
+      to top,
+      rgb(3, 43, 59),
+      rgba(3, 43, 59, 0.788)
+    ),
+    url("../../public/images/banner.jpg");
+  background-blend-mode: multiply;
+  color: white;
+}
+
+.parent {
+  background-image: linear-gradient(45deg, aqua, red);
+  width: 420px;
+  height: 420px;
+  filter: blur(70px);
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle {
+  background-color: rgb(26, 161, 116);
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../public/images/circleBG.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid aquamarine;
+}
+
+.childOne {
+  background-color: bisque;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  animation: anim 120s ease-in-out infinite;
+  transition: all;
+  background-image: url("../../public/images/doctor1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  border: 5px solid white;
+  box-shadow: 5px 5px 20px 5px aqua;
+}
+.childTwo {
+  background-color: bisque;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  animation: anim2 120s ease-in-out infinite;
+  transition: all;
+  background-image: url("../../public/images/doctor2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  border: 5px solid white;
+  box-shadow: 5px 5px 20px 5px aqua ;
+}
+.childThree {
+  background-color: bisque;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  animation: anim3 120s ease-in-out infinite;
+  transition: all;
+  background-image: url("../../public/images/doctor3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  border: 5px solid white;
+  box-shadow: 5px 5px 20px 5px aqua;
+}
+.childFour {
+  background-color: bisque;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  animation: anim4 120s ease-in-out infinite;
+  transition: all;
+  background-image: url("../../public/images/doctor4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  border: 5px solid white;
+  box-shadow: 5px 5px 20px 5px aqua;
+}
+/* anim */
+@keyframes anim {
+  0% {
+    transform: rotate(0deg) translate(-170%) rotate(0deg) scale(1);
+  }
+
+  100% {
+    transform: rotate(360deg) translate(-170%) rotate(-360deg) scale(1);
+  }
+}
+/* anim2 */
+@keyframes anim2 {
+  0% {
+    transform: rotate(0deg) translate(170%) rotate(0deg) scale(1);
+  }
+
+  100% {
+    transform: rotate(360deg) translate(170%) rotate(-360deg) scale(1);
+  }
+}
+/* anim3 */
+@keyframes anim3 {
+  0% {
+    transform: rotate(0deg) translateY(170%) rotate(0deg) scale(1);
+  }
+
+  100% {
+    transform: rotate(360deg) translateY(170%) rotate(-360deg) scale(1);
+  }
+}
+/* anim4 */
+@keyframes anim4 {
+  0% {
+    transform: rotate(0deg) translateY(-170%) rotate(0deg) scale(1);
+  }
+
+  100% {
+    transform: rotate(360deg) translateY(-170%) rotate(-360deg) scale(1);
+  }
+}

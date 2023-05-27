@@ -1,0 +1,86 @@
+[
+    {
+        "service_name": "Teeth Cleaning",
+        "category_name": "Preventive Dentistry",
+        "short_description": "Maintain your oral health with a thorough teeth cleaning session.",
+        "tags": ["Oral hygiene", "Dental cleaning", "Plaque removal", "Tartar prevention", "Gum health"],
+        "price": "$100"
+      },
+      {
+        "service_name": "Dental Sealants",
+        "category_name": "Preventive Dentistry",
+        "short_description": "Protect your teeth from decay with dental sealants.",
+        "tags": ["Tooth protection", "Cavity prevention", "Sealant application", "Molar sealants", "Dental hygiene"],
+        "price": "$50 per tooth"
+      },
+      {
+        "service_name": "Dental Fillings",
+        "category_name": "Restorative Dentistry",
+        "short_description": "Restore decayed or damaged teeth with durable dental fillings.",
+        "tags": ["Tooth decay", "Cavity treatment", "Dental restorations", "Tooth repair", "Composite fillings"],
+        "price": "$150 per filling"
+      },
+      {
+        "service_name": "Dental Crowns",
+        "category_name": "Restorative Dentistry",
+        "short_description": "Restore damaged or weakened teeth with durable dental crowns.",
+        "tags": ["Tooth restoration", "Crown placement", "Tooth protection", "Dental cap", "Tooth support"],
+        "price": "$900 per crown"
+      },
+      {
+        "service_name": "Teeth Whitening",
+        "category_name": "Cosmetic Dentistry",
+        "short_description": "Enhance your smile's brightness with our professional teeth whitening treatment.",
+        "tags": ["Teeth bleaching", "Stain removal", "Brightening treatment", "Teeth discoloration", "Teeth stains"],
+        "price": "$250"
+      },
+      {
+        "service_name": "Dental Veneers",
+        "category_name": "Cosmetic Dentistry",
+        "short_description": "Transform your smile with dental veneers.",
+        "tags": ["Smile enhancement", "Porcelain veneers", "Cosmetic restoration", "Instant orthodontics", "Tooth coverings"],
+        "price": "$1,200"
+      },
+      {
+        "service_name": "Root Canal Therapy",
+        "category_name": "Endodontics",
+        "short_description": "Save infected or damaged teeth with our specialized root canal therapy.",
+        "tags": ["Tooth infection", "Root canal treatment", "Pulp removal", "Dental pain", "Endodontic therapy"],
+        "price": "$800 per tooth"
+      },
+      {
+        "service_name": "Apicoectomy",
+        "category_name": "Endodontics",
+        "short_description": "Treat persistent infections and save your tooth with an apicoectomy.",
+        "tags": ["Root tip surgery", "Endodontic microsurgery", "Root-end resection", "Dental abscess", "Tooth preservation"],
+        "price": "$1,200 per procedure"
+      },
+      {
+        "service_name": "Dental Implants",
+        "category_name": "Prosthodontics",
+        "short_description": "Regain the functionality and aesthetics of missing teeth with dental implants.",
+        "tags": ["Tooth replacement", "Implant surgery", "Dental prosthetics", "Permanent restoration", "Missing teeth"],
+        "price":"$3,500 per implant"
+    },
+    {
+    "service_name": "Dentures",
+    "category_name": "Prosthodontics",
+    "short_description": "Replace missing teeth with customized dentures.",
+    "tags": ["Teeth replacement", "Complete dentures", "Partial dentures", "Denture fitting", "Denture maintenance"],
+    "price": "$1,500 - $3,500 (varies based on type)"
+    },
+    {
+    "service_name": "Orthodontic Braces",
+    "category_name": "Orthodontics",
+    "short_description": "Achieve a straighter smile with orthodontic braces.",
+    "tags": ["Teeth alignment", "Braces for teeth", "Bite correction", "Dental misalignment", "Metal braces"],
+    "price": "$4,000 - $6,000 (varies based on complexity)"
+    },
+    {
+    "service_name": "Clear Aligner Therapy",
+    "category_name": "Orthodontics",
+    "short_description": "Straighten your teeth discreetly with clear aligners.",
+    "tags": ["Invisible braces", "Removable aligners", "Orthodontic treatment", "Clear braces", "Aligner trays"],
+    "price": "$4,500 - $6,500 (varies based on complexity)"
+    }
+]
